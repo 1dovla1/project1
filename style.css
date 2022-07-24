@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;    
+}
+/***************************/
+/*HEADER SECTION*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    gap: 3rem;
+    padding: 5rem;
+    background-color: #bb3541;    
+}
+.header-a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #f0f0f0;
+}
+/***********  MAIN ARTICLE  **************/
+.article-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+/***********************************/
+/*WHO AM I SECTION*/
+.who-am-i {
+    background-color: #2d2b44;
+    width: 100%;
+    padding: 35rem 0;
+    text-align: center;
+}
+.who-am-i h1 {
+    font-size: 6rem;
+    color: #f0f0f0;
+}
+.who-am-i p {
+    color: #bb3541;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+/***************************************/
+/*PROJECTS SECTION*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    gap: 3rem;  
+    background-color: #283688;
+    width: 100%;
+}
+.projects h2 {
+    font-size: 3rem;
+    /* text-decoration: underline; */
+    color: #f0f0f0;
+    padding-top: 5rem;
+}
+.h2-hr {
+    color: #f0f0f0;
+}
+.projects-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    
+}
+.project {
+    width: 35rem;
+    height: 35rem; 
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;       
+}
+.project > p {
+    background-color: #2d2b44;
+    padding: 2rem ;
+    width: 35rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+.project-1-img {
+    background-image: url('img/project1.jpg');   
+}
+.project-2-img {
+    background-image: url('img/project2.webp');
+}
+.project-3-img {
+    background-image: url('img/project3.jpg');
+}
+.project-4-img {
+    background-image: url('img/project4.jpg');
+}
+.project-5-img {
+    background-image: url('img/project5.jpg');
+}
+.project-6-img {
+    background-image: url('img/project6.jpg');
+}
+.show-all-btn {
+    background-color: #2d2b44;
+    padding: 1rem 3rem;
+    font-size: 3rem;
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-bottom: 12rem;
+}
+/************************************/
+/*CONTACT LINKS SECTION*/
+.contact-links {
+    background-color: #2d2b44;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    color: #f0f0f0;
+}
+.contact-links h2 {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+.contact-links p {
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+.contact-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-links-a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #f0f0f0;
+}
+/******************************/
+/*FOOTER SECTION*/
+footer {
+    border-top: 0.5rem solid #bb3541;
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-p {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 3rem 0;
+}
+@media only screen and (max-width: 1115px) {
+    .project {
+        width: 25rem;
+        height: 25rem;              
+    }
+}
+
+
+@media only screen and (max-width: 815px) {
+    .project {
+        width: 35rem;
+        height: 35rem;              
+    }
+    .projects-display {                
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+              
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+    .header-a {
+        font-size: 2rem;
+    }   
+    .who-am-i {
+        padding: 20rem 0;
+    }
+    .who-am-i h1 {
+        font-size: 4rem;
+    }
+    .who-am-i p {
+        font-size: 2rem;
+    }
+    .project {
+        width: 25rem;
+        height: 25rem; 
+    }
+    .projects h2 {
+        font-size: 2.5rem;
+        /* text-decoration: underline; */
+        color: #f0f0f0;
+        padding-top: 4rem;
+    }
+    .show-all-btn {        
+        padding: 1rem 2.5rem;
+        font-size: 2.5rem;
+        margin-bottom: 8rem;
+    }
+    .contact-links {
+        padding: 7.5rem 0;
+    }
+    .contact-links ul {
+        flex-wrap: wrap;
+    }     
+    .footer-p {
+        text-align: center;
+    }
+    .p-1 {
+        padding-bottom: 0;
+    }
+}
+
+
+
+/*
+
+            <div>
+                <h2>These are some of my projects</h2>
+                <hr> 
+            </div> 
+
+
+*/
